@@ -104,7 +104,7 @@ service ta_qmi_service /system/bin/ta_qmi_service
 
 # Wi-Fi and BT MAC addresses
 service macaddrsetup /system/bin/macaddrsetup
-    class late_start
+    class main
     user root
     oneshot
     seclabel u:r:macaddrsetup:s0
