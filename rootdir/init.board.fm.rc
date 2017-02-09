@@ -10,8 +10,7 @@ on post-fs-data
     chmod 0770 /data/misc/fm
 
 service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
-    class late_start
+    class main
     user system
     group system
-    disabled
     oneshot
